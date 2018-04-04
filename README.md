@@ -19,9 +19,9 @@ DataBucket: the name of the data bucket you created in the configuration stack
 ##### Upload Collector Lambda
 
 
-Either upload the pre-packaged `Collector` lambda _packaged/Collector.zip_ using the lambda console, or run:
+Either upload the pre-packaged `Collector` lambda _packaged/Collector.zip_ using the lambda console or create deployment package and upload via script:
 
 ```
-Package and upload from source
-./lambda_deploy.sh rain-collector-<yourname> Collector
+STACK_NAME=<your_rain_collector_stack_name>
+./lambda_deploy.sh $STACK_NAME Collector
 ```
